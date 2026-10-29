@@ -1,0 +1,25 @@
+
+# VS Code workspace settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies (if Node.js is added later)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# Build output (if a build tool is added later)
+dist/
+build/
