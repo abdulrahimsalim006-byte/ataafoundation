@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ataa Foundation projects and community initiatives. Discover our work and how you can contribute.">
+    <title>Our Projects | Ataa Foundation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="projects.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="home.html" class="site-brand" aria-label="Ataa Foundation home">
+            <img src="images/ataa-logo.png" alt="Ataa Foundation logo">
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="causes.html">Causes</a>
+            <a href="projects.html" class="active" aria-current="page">Projects</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+        </nav>
+    </header>
+
+    <main class="projects-page">
+
+        <section class="projects-hero">
+            <div class="projects-hero-inner">
+                <p class="eyebrow">OUR WORK IN ACTION</p>
+                <h1>Projects That Make a Difference</h1>
+                <p>
+                    Explore our community initiatives and discover how
+                    purposeful giving can bring hope to those in need.
+                </p>
+                <a href="#all-projects" class="projects-hero-button">
+                    Explore Projects
+                </a>
+            </div>
+        </section>
+
+        <section class="projects-section" id="all-projects">
+
+            <div class="projects-heading">
+                <p class="eyebrow">GIVING WITH PURPOSE</p>
+                <h2>Our Projects</h2>
+                <p>
+                    Discover our initiatives, follow their progress,
+                    and learn how you can support the work.
+                </p>
+            </div>
+
+            <div
+                id="projects-message"
+                class="projects-message"
+                role="status"
+                aria-live="polite"
+            >
+                Loading projects...
+            </div>
+
+            <div
+                id="projects-grid"
+                class="projects-grid"
+                aria-label="Foundation projects"
+            ></div>
+
+        </section>
+
+        <section class="projects-cta">
+            <div class="projects-cta-inner">
+                <p class="eyebrow">BE PART OF THE GOOD</p>
+                <h2>Every Contribution Can Help</h2>
+                <p>
+                    Support meaningful community initiatives and help
+                    bring hope to those who need it.
+                </p>
+                <a href="donate.html" class="projects-cta-button">
+                    Support Our Work
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div class="footer-about">
+                <a href="home.html" class="footer-brand" aria-label="Ataa Foundation home">
+                    <span class="footer-arabic" lang="ar" dir="rtl">عطاء</span>
+                    <span class="footer-name">ʿATAA FOUNDATION </span>
+                </a>
+
+                <p>
+                    Giving with purpose. Serving with mercy.
+                    Bringing hope to those in need.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="causes.html">Causes</a>
+                <a href="projects.html">Our Projects</a>
+                <a href="get-involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Stay Connected</h3>
+                <a href="stories.html">Stories &amp; Reminders</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Our Purpose</h3>
+                <p>Giving with purpose.</p>
+                <p>Serving with mercy.</p>
+                <p>Bringing hope to those in need.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="footer-year"></span> Ataa Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("footer-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
